@@ -69,6 +69,12 @@ redistributed in this repository — request them from the author
 (calpaliu@gmail.com) and verify against the per-record SHA-256 hashes in
 `our_experiment/runs/manifests/all_episodes_v2.json`.
 
+> **Known gap, disclosed:** `verify_numbers.py` was frozen against an
+> earlier paper revision. Three of its 32 checks (E6 text-match
+> substrings `108`, `10/85`, `19/180`) do not match the final paper text
+> and will report FAIL when the audit is run against raw records. This
+> frozen-revision mismatch is disclosed rather than silently patched.
+
 ## Evidence layers (read before citing)
 
 1. **Invitation acceptance** — 0/14 voluntary invitations accepted (descriptive).
